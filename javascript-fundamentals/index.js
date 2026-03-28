@@ -1,12 +1,13 @@
-const user = {
-name: "Grace",
-age: 19, 
-favoriteLanguage: "JavaScript"
+function getLargestNumber(numbers){
+let largest = numbers[0];
+for(let i = 1; i < numbers.length; i++){
+if(largest < numbers[i]) {
+largest = numbers[i];
+}
+}
+return largest;
 }
 
-function introduceUser(person) {
-return "My name is " + person.name + ". I am " + person.age + " years old and I like " + person.favoriteLanguage + ".";
-}
 
-console.log(introduceUser(user));
-
+console.log(getLargestNumber([3, 8, 2, 5]));
+console.log(getLargestNumber([10, -1, 7]));
