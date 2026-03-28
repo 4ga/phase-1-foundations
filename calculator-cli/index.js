@@ -4,7 +4,8 @@ const args = process.argv.slice(2);
 
 if(args.length !== 3){
  console.log("Usage: node index.js <operation> <number1> <number2>");
-}else { 
+}else {
+ try{ 
  const operation = args[0];
  const firstNumber = Number(args[1]);
  const secondNumber = Number(args[2]);
@@ -22,4 +23,7 @@ if(args.length !== 3){
  }else {
   console.log("Unknown operation. Use add, subtract, multiply, or divide.")
  }
+}catch(error){
+ console.log(error.message);
+} 
 }
