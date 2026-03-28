@@ -23,4 +23,9 @@ describe("divide", () => {
  it("divide two numbers", () =>{
    expect(divide(10, 2)).toBe(5);
  })
+
+ it("throws an error when dividing zero", () => {
+  expect(() => divide(10, 0)).toThrow("Cannot divide by zero");
+ })
+
 })
