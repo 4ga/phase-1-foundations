@@ -1,7 +1,9 @@
-const age = 16;
+const numbers = [4, 7, 2, 9];
+let total = 0;
 
-if(age >= 18) {
-console.log("You are an adult.");
-}else{
-console.log("You are not an adult yet.");
+for(let i = 0; i < numbers.length; i++){
+total = total + numbers[i];
 }
+
+console.log(total);
+
