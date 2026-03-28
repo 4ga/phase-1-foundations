@@ -1,9 +1,12 @@
-const numbers = [4, 7, 2, 9];
-let total = 0;
-
-for(let i = 0; i < numbers.length; i++){
-total = total + numbers[i];
+const user = {
+name: "Grace",
+age: 19, 
+favoriteLanguage: "JavaScript"
 }
 
-console.log(total);
+function introduceUser(person) {
+return "My name is " + person.name + ". I am " + person.age + " years old and I like " + person.favoriteLanguage + ".";
+}
+
+console.log(introduceUser(user));
 
