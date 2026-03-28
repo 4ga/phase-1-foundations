@@ -1,6 +1,7 @@
-const firstName = "Grace";
-const favoriteNumber = 7;
+const age = 16;
 
-console.log(firstName);
-console.log(favoriteNumber);
-console.log("My name is " + firstName + " and my favorite number is " + favoriteNumber);	
+if(age >= 18) {
+console.log("You are an adult.");
+}else{
+console.log("You are not an adult yet.");
+}
